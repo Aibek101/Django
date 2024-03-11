@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Blog{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <h1><a href="{% url 'post_list' %}">My Blog</a></h1>
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>
